@@ -18,6 +18,7 @@ from django.urls import path
 from tutorial import views
 
 urlpatterns = [
+    # path("", admin.site.urls),
     path("admin/", admin.site.urls),
     path("tutorials/", views.tutorial_list),
     path("tutorials/<int:pk>/", views.tutorial_ind),
